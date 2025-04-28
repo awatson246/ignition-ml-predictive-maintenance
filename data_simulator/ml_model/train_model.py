@@ -4,7 +4,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 import joblib
 
-data = pd.read_csv('output.csv')
+data = pd.read_csv("../output.csv")
 X = data[['temperature', 'vibration']]
 y = data['failure_risk']
 
