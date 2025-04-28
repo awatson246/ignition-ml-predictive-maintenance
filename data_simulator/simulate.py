@@ -20,7 +20,7 @@ def generate_data():
     return [timestamp, temp, vibration, failure]
 
 def write_to_csv(data):
-    with open(filename, mode="w", newline="") as file:
+    with open(filename, mode="a", newline="") as file:
         writer = csv.writer(file) # creates an object that can write row(s) to a file
         writer.writerow(data) # writes a single row
 
