@@ -6,7 +6,7 @@ import paho.mqtt.client as mqtt
 MQTT_BROKER = "mqtt.example.com"  # address of MQTT servor/broker
 MQTT_TOPIC = "sensor/data" # topic being published
 
-client = mqtt.Client(callback_api_version=5)
+client = mqtt.Client()
 client.connect(MQTT_BROKER)
 
 filename = "output.csv"
