@@ -38,4 +38,4 @@ while True:
     write_to_csv(data_row)
     publish_mqtt(data_row)
     #print(f"Generated and published: {data_row}")
-    time.sleep(5)
+    time.sleep(1)
