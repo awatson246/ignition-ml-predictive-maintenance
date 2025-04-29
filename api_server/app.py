@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 import joblib
 
-model = joblib.load('model.pkl')
+model = joblib.load("../model.pkl")
 
 app = Flask(__name__)
 
