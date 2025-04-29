@@ -3,7 +3,7 @@ import random
 import time
 import paho.mqtt.client as mqtt
 
-MQTT_BROKER = "localhost"  # address of MQTT servor/broker
+MQTT_BROKER = "192.168.109.11"  # address of MQTT servor/broker
 MQTT_TOPIC = "sensor/data" # topic being published
 
 client = mqtt.Client()
