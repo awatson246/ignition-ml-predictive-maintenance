@@ -13,8 +13,8 @@ def predict():
     try:
         # gets temp and vib data 
         data = request.get_json()
-        temp = data.get('temp')
-        vib = data.get('vib')
+        temp = data.get('temperature')
+        vib = data.get('vibration')
 
         if temp is None or vib is None:
             return jsonify({"error": " missing 'temp' or 'vib' request data"}), 400
